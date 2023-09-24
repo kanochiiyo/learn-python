@@ -1,6 +1,8 @@
 # Impor modul math biar bisa pakai fungsi sqrt (akar)
 import math
 
+print("Program Menghitung Hipotenusa Segitiga Siku-siku\n")
+
 # User input nilai a dan b
 a = float(input("Masukkan panjang sisi pertama (a) = "))
 b = float(input("Masukkan panjang sisi kedua (b) = "))
