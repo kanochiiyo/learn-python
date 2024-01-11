@@ -19,7 +19,7 @@ def say(name, age):
 say("Dinot", 20)
 a = "Dinai"
 b = "19\n"
-say(a, b,)
+say(a, b)
 
 # nama fungsi lebih baik kata kerja, contoh: create, getByName, execute
 

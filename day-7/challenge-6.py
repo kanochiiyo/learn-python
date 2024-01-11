@@ -28,7 +28,11 @@ class Warehouse:
             print(product_number + product_name + stocks)
          #   print(f"{item['number']} | {item['name']}")
          #   print(f"Stock: {item['stock']}")
-
+    def update(self, name: str, stock: int):
+        for item in self.data:
+            if item['name'] == name:
+                item['stock'] = stock
+                
     def delete(self):
         os.system('clear')
         optDel = input("Pilih nomor barang yang ingin didelete: ")
@@ -62,8 +66,13 @@ while True:
         warehouse.read()
         sleep(3)
         os.system("clear")
-    #elif opt == "3":
+    elif opt == "3":
+        name = input("\nMasukkan nama barang: ")
+        stock = input("Masukan stok update barang: ")
+        stock = int(stock)
 
+        warehouse.update(name, stock)
+        print("Berhasil update stok!\n")
     elif opt == "4":
         warehouse.delete()
     elif opt == "5":
